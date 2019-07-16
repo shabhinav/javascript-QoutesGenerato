@@ -33,13 +33,17 @@ const qoute=document.querySelector("#qoute");
 const border=document.querySelector('.container');
 const bgcolor=document.querySelector('body');
 
-qouteBtn.addEventListener('click',displayQoute);
+// To Display Qoutes
 
 function displayQoute(){
     let number=Math.floor(Math.random()*qoutes.length);
     qouteAuthor.innerHTML=qoutes[number].name;
     qoute.innerHTML=qoutes[number].qoute;
 }
+
+qouteBtn.addEventListener('click',displayQoute);
+
+//To changeborder and width
 
 function borderChange(){
     let num=Math.floor(Math.random()*changeborder.length)
@@ -49,6 +53,16 @@ function borderChange(){
 
 qouteBtn.addEventListener('click',borderChange);
 
+//To change Bordercolor
+
+function bordercolor(){
+    let number=Math.floor(Math.random()*color.length);
+    border.style.borderColor=color[number];
+}
+
+qouteBtn.addEventListener('click',bordercolor);
+
+//To change BackgroundColor
 
 function backgroundcolorchange(){
         let hexcol ='#';
@@ -61,9 +75,4 @@ function backgroundcolorchange(){
 
 qouteBtn.addEventListener('click',backgroundcolorchange);
 
-function bordercolor(){
-    let number=Math.floor(Math.random()*color.length);
-    border.style.borderColor=color[number];
-}
 
-qouteBtn.addEventListener('click',bordercolor);
