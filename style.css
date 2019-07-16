@@ -1,0 +1,48 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#9b2e2e;
+    color:#333;
+    font-family:"calibri",sans-serif;
+    font-weight: 400; 
+    text-transform: capitalize;
+}
+
+.container{
+    text-align: center;
+    padding: 1.5rem;
+    border:5px dashed rgb(49, 44, 44);
+    border-radius: 50px;
+    background-color: #fff;
+    flex: 0 0 80%;
+}
+
+#qoutebtn{
+    border-radius: 100px;
+    padding: 10px 1px;
+    background-color: wheat;
+    border:none;
+    outline: none;
+    font-size:15px;
+    font-weight: bold;
+}
+
+#qoutebtn:hover{
+    color:white; 
+    background-color:blue;
+    cursor: pointer;
+}
+
+blockquote{
+    background-color: rgb(223, 223, 223);
+    border-left:10px solid #9b2e2e;
+    border-right:10px solid #9b2e2e;
+    margin: 1.5rem;
+    padding: 0.5rem;
+}
+
+#qouteAuthor{
+    color: orange;
+}
